@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* css for header section */
+.header{
+    background-color: #fcdb00;
+    padding: 60px 0 106px 0;
+}
+.navbar{
+    list-style: none;
+    text-align: right;
+}
+.navbar li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.logo{
+    display: inline-block;
+}
+.navbar li a:link,
+.navbar li a:visited{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #010101;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0 30px;
+    position: relative;
+    display: inline-block;
+    height: 47px;
+    line-height: 47px;
+}
+.navbar li a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transition: all 0.7s ease-in-out;
+}
+.navbar li a:hover::after{
+    width: 100%;
+}
+.inspiration{
+    padding-top: 75px;
+}
+.ipad{
+    margin-left: 60px;
+}
+.brandIcons{
+    list-style: none;
+}
+.brandIcons li{
+    display: inline-block;
+    margin-right: 40px;
+}
+.brandIcons li a:link,
+.brandIcons li a:visited{
+    display: inline-block;
+}
+.brandIcons i{
+    font-size: 40px;
+    color: #010101;
+    transition: all 0.7s ease-in-out;
+}
+.brandIcons i:hover,
+.brandIcons i:focus,
+.brandIcons i:active{
+    color: blue;
+    transform: translateY(-10px) scale(1.1);
+}
+
+/* css for features */
+.features{
+    padding: 105px 0 170px 0;
+}
+.thumbnail i{
+    font-size: 40px;
+}
+.thumbnail h4{
+    font-size: 22px;
+    color: #010101;
+    margin-bottom: 15px;
+}
+.thumbnail p{
+    font-size: 16px;
+    color: #898989;
+}
+/* footer css */
+.footer{
+    background-color: #010101;
+    padding: 95px 0 170px;
+}
+.email{
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: calc(100% - 150px);
+    padding: 25px;
+}
+.email::placeholder{
+    color: orange;
+    font-size: 16px;
+}
+.submitBtn{
+    cursor: pointer;
+    height: 50px;
+    width: 125px;
+    background-color: #fcdb00;
+    border: 2px solid #fcdb00;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-left: 15px;
+    transition: all 0.7s ease-in-out;
+}
+.submitBtn:hover,
+.submitBtn:focus,
+.submitBtn:active{
+    background-color: transparent;
+    color: #fcdb00;
+}
+.form-group{
+    margin-bottom: 80px;
+}
+.footer .brandIcons{
+    margin-bottom: 135px;
+}
+.footer .brandIcons i{
+    color: #fcdb00;
+}
+.scaleAnimation i:hover{
+    transform: scale(1.5);
+}
+.footerLinks{
+    list-style: none;
+}
+.footerLinks li, .footerLinks li a:link, .footerLinks li a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.footerLinks li a:link, .footerLinks li a:visited{
+    text-transform: capitalize;
+}

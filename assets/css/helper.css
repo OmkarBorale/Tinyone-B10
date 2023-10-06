@@ -1,0 +1,87 @@
+.container{
+    width: 1180px;
+    margin: 0 auto;
+}
+.row,
+.row::after,
+.row::before{
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+/* css for grid system */
+[class ^= "col-"]{
+    float: left;
+    padding: 0 15px;
+}
+.col-1{
+    width: calc(100% *1 / 12);
+}
+.col-2{
+    width: calc(100% * 2 / 12);
+}
+.col-3{
+    width: calc(100% * 3 / 12);
+}
+.col-4{
+    width: calc(100% *4 / 12);
+}
+.col-5{
+    width: calc(100% * 5 / 12);
+}
+.col-9{
+    width: calc(100% * 9 / 12);
+}
+.col-10{
+    width: calc(100% * 10 / 12);
+}
+
+
+/* offset classes */
+.col-offset-1{
+    margin-left: calc(100% * 1 / 12);
+}
+.col-offset-2{
+    margin-left: calc(100% * 2 / 12);
+}
+
+/* css for typograpy */
+.pri-heading{
+    font-size: 32px;
+    color: #010101;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+.footer .pri-heading{
+    color: #cab000;
+}
+.sub-heading{
+    font-size: 20px;
+    color: #313841;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.footer .sub-heading{
+    color: #898989;
+    margin-bottom: 45px;
+}
+.paragraph{
+    font-size: 16px;
+    color: #555555;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* alignment */
+.text-center{
+    text-align: center;
+}
+/* margin and padding class */
+
+.mb-70{
+    margin-bottom: 70px;
+}
+.mb-90{
+    margin-bottom: 90px;
+}
